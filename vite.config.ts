@@ -12,10 +12,10 @@ export default defineConfig({
     vueJsx(),
     vueDevTools(),
   ],
+  base: '/mcs/',
   resolve: {
     alias: {
       '@': fileURLToPath(new URL('./src', import.meta.url))
     },
   },
-  base: '/mcs/',
 })
